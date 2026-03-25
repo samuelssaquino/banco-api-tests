@@ -3,7 +3,7 @@ const { expect } = require('chai');
 
 describe('Login', () => {
     describe('POST /Login', () => {
-        it('Deve retornar 200 com token em string quando usart credencias válidas', async() => {
+        it('Deve retornar 200 com token em string quando usar credencias válidas', async() => {
             const resposta = await request('http://localhost:3000')
                 .post('/Login')
                 .set('Content-Type', 'application/json')
